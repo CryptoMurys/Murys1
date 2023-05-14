@@ -1,0 +1,9 @@
+// Создайте функцию, которая случайным образом выбирает песню из массива и запускает ее
+const songs = ['Never Gonna Give You Up', 'Barbie Girl', 'Mambo No. 5', 'Macarena'];
+function playRandomSong() {
+  const randomIndex = Math.floor(Math.random() * songs.length);
+  const song = songs[randomIndex];
+  console.log(`Now playing: ${song}!`);
+}
+
+playRandomSong();
